@@ -13,4 +13,18 @@
       运行时异常RunTimeException是所有不受检查异常的基类
       常见的运行时异常有 NullPointerException、ClassCastException、NumberFormatException、IndexOutOfBoundsException
 
+    4.ClassNotFoundException和NoClassDefFoundError的区别？
+        ClassNotFoundException 当应用程序运行的过程中尝试使用类加载器去加载class文件的时候，如果没有在classpath中找到指定的类，
+      就会抛出ClassNotFoundException异常，一般情况下，当我们使用Class.forName()时会出现这种异常，比如加载JDBC的驱动类
+        NoClassDefFoundError 并不需要应用程序去关心cath问题，当JVM在编译时期发现这个类是可用的，但是在运行是找不到这个类的定义，
+      JVM就会抛出NoClassDefFoundError错误，一般情况，在使用框架时，框架组件依赖于某个包，而改包没有导入或者是版本问题就会出现这个错误
+
+    5.throw和throws的区别
+        throw是在方法体内抛出的异常，并且一次只能抛出一个异常，由方法体处理，如果方法体不处理，则需要在方法上声明throws
+        throws是在方法声明时，表明该方法可能产生的所有异常，不做处理向上层传递
+
+    6.你对异常有什么了解
+        尽量不要捕获类似像Exception这样的通用异常 可读性差
+        不要生吞异常，既cath后不做处理 在实际生产中要借助日志
+        try-cath会产生额外的性能开销，尽量不要try-cath一大段的代码
 
