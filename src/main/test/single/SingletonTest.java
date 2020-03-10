@@ -1,5 +1,6 @@
-import com.study.InterviewDom;
-import com.study.Singleton;
+package single;
+
+import com.study.single.Singleton;
 import com.util.SerializableUtil;
 import org.junit.Test;
 
@@ -20,7 +21,7 @@ public class SingletonTest {
         Singleton s2 = Singleton.getSingleton();
         System.out.println(s1 == s2);*/
         try {
-            Class.forName("com.study.Singleton");   // 类加载去创建类
+            Class.forName("com.study.single.Singleton");   // 类加载去创建类
             Singleton.getSingleton();
         }catch (Exception e){
             e.printStackTrace();

@@ -1,4 +1,6 @@
-import com.study.InterviewDom;
+package single;
+
+import com.study.single.InterviewDom;
 import com.util.SerializableUtil;
 import org.junit.Test;
 
