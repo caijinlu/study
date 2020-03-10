@@ -1,12 +1,14 @@
 package com.study.single;
 
+import java.io.Serializable;
+
 /**
  * @program: study
  * @description: 单例 -懒汉式
  * @author: jinlu
  * @create: 2020-03-10 14:15
  **/
-public class SingletonLazy {
+public class SingletonLazy implements Serializable {
 
     /**
      * 懒汉式只有调用方法时才创建对象
@@ -23,7 +25,11 @@ public class SingletonLazy {
 
     private static volatile SingletonLazy singletonLazy = null;
 
-    private SingletonLazy(){}
+    private SingletonLazy(){
+        if(singletonLazy != null){
+            throw new IllegalStateException("对象已被创建！");
+        }
+    }
 
     public static SingletonLazy getSingletonLazy(){
         // 双检索同步代码块 只有在一开始初始化才会进入到synchronized
@@ -35,5 +41,11 @@ public class SingletonLazy {
             }
         }
         return singletonLazy;
+    }
+
+    // 因为静态的变量在序列化的时候是不会被保存的 在反序列化时会创建实例 从而破坏单例
+    // 提供readResolve在方法在反序列化的时候返回当前的对象 从而解决序列化不安全的问题
+    private Object readResolve(){
+        return getSingletonLazy();
     }
 }
