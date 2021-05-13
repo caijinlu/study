@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-13T09:30:13.063Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="XQZZ7lkm1WfKz8MJDVpj" version="14.6.12" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-13T09:49:49.895Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="ZPdN_cmmMVRgik1d2yI1" version="14.6.12" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1278" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -83,7 +83,7 @@
             <mxPoint x="800" y="745" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="g2LM-X_P6zVzMJMQ8mb0-56" value="增加用户云元&#xa;扣减用户增值余额&#xa;扣减平台云元资产余额" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="g2LM-X_P6zVzMJMQ8mb0-56" value="增加用户云元&lt;br&gt;扣减用户增值余额&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="720" y="600" width="160" height="70" as="geometry" />
         </mxCell>
         <mxCell id="g2LM-X_P6zVzMJMQ8mb0-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g2LM-X_P6zVzMJMQ8mb0-58" target="g2LM-X_P6zVzMJMQ8mb0-66" edge="1">
@@ -122,7 +122,10 @@
         <mxCell id="g2LM-X_P6zVzMJMQ8mb0-101" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g2LM-X_P6zVzMJMQ8mb0-95" target="g2LM-X_P6zVzMJMQ8mb0-99" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="g2LM-X_P6zVzMJMQ8mb0-95" value="执行剩下的业务" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g2LM-X_P6zVzMJMQ8mb0-95" target="E6DgkEPs0XCpYOIlAKln-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g2LM-X_P6zVzMJMQ8mb0-95" value="扣减平台云元资产余额&lt;br&gt;增加用户抢购云元数" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF6666;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="320" y="880" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="g2LM-X_P6zVzMJMQ8mb0-103" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="g2LM-X_P6zVzMJMQ8mb0-99" target="g2LM-X_P6zVzMJMQ8mb0-102" edge="1">
@@ -133,6 +136,33 @@
         </mxCell>
         <mxCell id="g2LM-X_P6zVzMJMQ8mb0-102" value="成功" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="40" y="1000" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-0" value="抛出异常" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="880" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="E6DgkEPs0XCpYOIlAKln-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1000" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="850" />
+              <mxPoint x="800" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-2" value="失败&lt;br&gt;回滚事务&lt;br&gt;释放分布式锁" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="880" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-3" value="成功" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="360" y="910" width="40" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-6" value="补偿事务" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF6666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="1000" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-7" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;direction=west;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1060" y="850" width="40" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="E6DgkEPs0XCpYOIlAKln-10" value="&lt;b&gt;当用户中心事务提交后，business层业务异常。业务层本地回滚事务，用户中心无法回滚，需要事务补偿。出现分布式事务问题&lt;/b&gt;" style="text;html=1;strokeColor=#FF3333;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1110" y="850" width="130" height="155" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
